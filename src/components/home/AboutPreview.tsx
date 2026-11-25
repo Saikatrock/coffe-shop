@@ -19,11 +19,20 @@ export default function AboutPreview() {
 
     {/* Content */}
     <div className="text-center md:text-left">
+      <div className="md:block hidden">
       <SectionHeading
         align="left"
         eyebrow="Our story"
-        title="A little cafe with a big love for coffee"
+        title="A little cafe with a big love for coffee  "
       />
+      </div>
+      <div className="md:hidden block">
+      <SectionHeading
+        align="center"
+        eyebrow="Our story"
+        title="A little cafe with a big love for coffee  "
+      />
+      </div>
 
       <p className="mt-4 text-stone-600 leading-relaxed">
         We started with one small espresso machine and a simple idea:
