@@ -28,7 +28,7 @@ const features = [
 export default function FeatureCardDemo() {
   return (
     <div className="flex-col h-auto w-full   justify-center bg-background">
-       <h3 className="text-2xl font-bold text-center">What our guests say</h3>
+   
       <div className="container mx-auto   grid max-w-5xl grid-cols-1 gap-8 p-4 md:grid-cols-2 lg:grid-cols-3">
        
         {features.map((feature) => (
