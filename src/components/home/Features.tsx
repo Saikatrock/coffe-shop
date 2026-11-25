@@ -2,11 +2,7 @@ import Section from '../ui/Section';
 import SectionHeading from '../ui/SectionHeading';
 import FeatureCardDemo from '../layout/featuredemo';
 
-const features = [
-  { emoji: '🌱', title: 'Ethically sourced', text: 'Beans from small farms we know and trust, roasted fresh every week.' },
-  { emoji: '🥐', title: 'Baked daily', text: 'Pastries, breads and desserts made in-house every single morning.' },
-  { emoji: '🛋️', title: 'Cozy atmosphere', text: 'Comfortable seating, soft music and fast wifi for work or catch-ups.' },
-];
+
 
 export default function Features() {
   return (

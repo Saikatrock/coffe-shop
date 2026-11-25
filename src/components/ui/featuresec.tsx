@@ -49,7 +49,7 @@ const AnimatedFeatureCard = React.forwardRef<
       ref={ref}
       style={cardStyle}
       className={cn(
-        "relative flex h-[380px] w-full max-w-sm flex-col justify-end overflow-hidden rounded-2xl border bg-card p-6 shadow-sm",
+        "relative flex h-[380px] w-full  max-w-sm flex-col justify-end overflow-hidden rounded-2xl border bg-card p-6 shadow-sm",
         className
       )}
       whileHover="hover"
@@ -61,22 +61,22 @@ const AnimatedFeatureCard = React.forwardRef<
       transition={{ type: "spring", stiffness: 200, damping: 15 }}
       {...props}
     >
+
       {/* Background Gradient */}
       <div
-        className="absolute inset-0 z-0 opacity-40 dark:opacity-20"
+        className="absolute inset-0  z-0 opacity-40 dark:opacity-20"
         style={{
           background: `radial-gradient(circle at 50% 30%, var(--feature-color-light) 0%, transparent 70%)`
         }}
       />
       
       {/* Index Number */}
-      <div className="absolute top-6 left-6 font-mono text-lg font-bold text-muted-foreground">
-        {index}
-      </div>
+     
 
       {/* Main Image */}
+      <div className="mb-4">
       <motion.div 
-        className="absolute inset-0 z-100 flex items-center justify-center"
+        className="absolute  inset-0 z-100 flex items-center justify-center"
         variants={{
             initial: { scale: 1, y: 0 },
             hover: { scale: 1.3, y: -20 },
@@ -86,14 +86,16 @@ const AnimatedFeatureCard = React.forwardRef<
         <img
           src={imageSrc}
           alt={tag}
-          className="w-60 h-80 object-contain"
+          className="w-50 h-80 object-contain"
         />
       </motion.div>
+
+      </div>
       
       {/* Content */}
-      <div className="relative z-20 rounded-lg border bg-background/80 p-4 backdrop-blur-sm dark:bg-background/60">
+      <div className="relative h-34  z-20 rounded-lg border bg-background/80 p-4 backdrop-blur-sm dark:bg-background/60">
         <span
-          className="mb-2 inline-block rounded-full px-3 py-1 text-xs font-semibold"
+          className="mb-2 mt-3 inline-block rounded-full px-3 py-1 text-xs font-semibold"
           style={{ 
             backgroundColor: 'var(--feature-color-dark)', 
             color: 'var(--feature-color)' 
@@ -109,3 +111,4 @@ const AnimatedFeatureCard = React.forwardRef<
 AnimatedFeatureCard.displayName = "AnimatedFeatureCard";
 
 export { AnimatedFeatureCard };
+

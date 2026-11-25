@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     // <nav className="mx-4 absolute bg-red-500 flex items-center justify-between border-none px-6 py-4 rounded-full text-white text-sm max-md:w-full">
-    <nav className="fixed     left-4 right-4 top-4 z-50 flex items-center justify-between rounded-full bg-gradient-to-r from-[#FEF7DC] via-[#8B4513] to-[#7A3306] px-6 py-4 text-sm text-white">
+    <nav className="fixed     left-4 right-4 top-4 z-101 flex items-center justify-between rounded-full bg-gradient-to-r from-[#FEF7DC] via-[#8B4513] to-[#7A3306] px-6 py-4 text-sm text-white">
 
       <Link to="/" className=" text-xl font-bold text-amber-900" onClick={() => setOpen(false)}>
         ☕ {siteConfig.name}

@@ -6,7 +6,7 @@ const features = [
   index: "",
   tag: "Ethically sourced",
   title: "Beans from small farms we know and trust, roasted fresh every week.",
-  imageSrc: "/images/ethically.png",
+  imageSrc: "/images/ethic.png",
   color: "orange" as const,
 },
   {
